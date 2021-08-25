@@ -19,7 +19,7 @@ a {
 }
 
 h2 {
-    color: #FFD046;
+    color: #46ffb2;
     font-family: 'Montserrat', sans-serif;
     font-size: 3.2em;
     margin: 3rem 0;
@@ -53,18 +53,18 @@ button {
     font-size: 2em;
     font-weight: 500;
     color: #ffffff;
-    background-color: #FFD046;
+    background-color: #ff46ac;
     padding: 1em 1.5em;
     border-radius: 100px;
     border: none;
 }
 
 button:hover {
-    background-color: #f7c01b;
+    background-color: #f77fd9;
 }
 
 button:active {
-    background-color: #f0b400;
+    background-color: #ad04b3;
 }
 
 /*-----------------------SECCIONES REUSABLES-------------------------*/
