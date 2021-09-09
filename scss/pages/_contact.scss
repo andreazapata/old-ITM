@@ -1,0 +1,139 @@
+h3 {
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 6rem;
+}
+
+.row-one {
+    display: grid;
+    grid-template-areas: 
+    "form-name form-mail form-phone";
+    gap: 3rem;
+    margin: 0 6rem;
+}
+
+.row-two {
+    margin: 0 6rem;
+}
+
+/* .form-grid {
+    display: grid;
+    grid-template-areas: 
+    "form-name form-mail form-phone"
+    "form-message form-message form-message"
+    "form-send form-send form-send";
+    gap: 3rem;
+    margin: 0 6rem;
+} */
+
+.form-name {
+    grid-area: form-name;
+}
+
+.form-mail {
+    grid-area: form-mail;
+}
+
+.form-phone {
+    grid-area: form-phone;
+}
+
+.form-message {
+    grid-area: form-message;
+}
+
+.form-send {
+    grid-area: form-send;
+}
+
+.inputBox {
+    border: 1px solid #FFD046;
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4em;
+    }
+    span {
+        color: $yellow;
+        text-align: right;
+    }
+}
+
+.inputBox-message {
+    border: 1px solid #FFD046;
+    background-color: white;
+    height: 15em;
+    padding: 1em;
+    display: flex;
+    input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4em;
+    }
+    span {
+        color: $yellow;
+        text-align: right;
+    }
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+.btnsend {
+    text-align: center;
+    padding: 2em;
+    margin: 3rem 0 6rem 0;
+}
+
+//Contacto directo
+
+.contact-grid span {
+    font-size: 2.4rem;
+    margin-right: 0.8rem;
+    color: #FFD046;
+}
+
+.contact-grid .indent {
+    margin-left: 3.4rem;
+} 
+
+.ubicacion {
+    width: 300px;
+    height: auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-areas: 
+    "phone address location"
+    "mail address location";
+    justify-items: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 0 6rem 6rem 6rem;
+} 
+
+.contact-phone {
+    grid-area: phone;
+}
+
+.contact-mail {
+    grid-area: mail;
+}
+
+.contact-address {
+    grid-area: address;
+}
+
+.contact-location {
+    grid-area: location;
+}

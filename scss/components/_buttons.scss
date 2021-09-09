@@ -1,0 +1,17 @@
+.btn:link, .btn:visited {
+    font-family: 'Montserrat',sans-serif; 
+    font-size: 2em;
+    font-weight: 700;
+    color: #ffffff;
+    background-color:$yellow;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+}
+
+.btn:hover {
+    background-color: $yellow-hover;
+}
+
+.btn:active {
+    background-color: $yellow-active;
+}

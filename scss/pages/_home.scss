@@ -1,0 +1,97 @@
+.heroImage {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../imagenes/tarimas.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 85vh;
+
+}
+
+.heroText {
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 15%;
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 5.6em;
+        margin-bottom: 6.4rem;
+    }
+}
+
+//Nosotros
+
+.img-nosotros {
+    width: 600px;
+    height: auto;
+}
+
+.nosotros {
+    display: grid;
+    grid-template-areas:
+    "imagen titulo"
+    "imagen texto"
+    "imagen boton";
+    margin: 4rem 20rem 6rem 20rem;
+    align-content: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.nosotros-imagen {
+    grid-area: imagen;
+}
+
+.nosotros-titulo {
+    grid-area: titulo;
+    height: 1em;
+    text-align: center;
+}
+
+.nosotros-texto {
+    grid-area: texto;
+    text-align: center;
+    padding: 0em 10em;
+}
+
+.nosotros-boton {
+    grid-area: boton;
+}
+
+//Productos 
+
+.productos {
+    margin-bottom: 4rem;
+    h3 {
+        text-align: center;
+        margin-top: 1.6rem;
+    }
+} 
+
+.lista-productos {
+    ul {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    li {
+        display: inline-block;
+        padding: 24px 64px;
+    }
+} 
+
+.producto-ejemplo {
+    img {
+        width: 320px;
+        height: 320px;
+        margin-bottom: 0.8rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.botoncentrado {
+    text-align: center;
+    margin-bottom: 8rem;
+}

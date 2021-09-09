@@ -1,0 +1,24 @@
+.contactBar{
+    background-color: $blue;
+    padding: 1.6rem 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    li {
+        display: inline-block;
+        color: #ffffff;
+    }
+}
+
+.contactInfo {
+    text-align: right;
+    padding: 0 3rem;
+    margin: 0 10rem;
+    ul {
+        li {
+            i {
+                font-size: 1.6rem;
+                margin: 0 0.2rem 0 1.6rem;
+            }
+        }
+    }
+}

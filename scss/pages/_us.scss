@@ -1,0 +1,64 @@
+.img-nosotros {
+    width: 600px;
+    height: auto;
+}
+
+.nosotros-uno {
+    display: grid;
+    grid-template-areas: 
+    "imagen-uno titulo-uno"
+    "imagen-uno texto-uno"
+    "imagen-uno texto-uno";
+    margin: 2rem 30rem 10rem 30rem;
+}
+
+.nosotros-uno-imagen {
+    grid-area: imagen-uno;
+}
+
+.nosotros-uno-titulo {
+    grid-area: titulo-uno;
+    height: 1em;
+}
+
+.nosotros-uno-texto {
+    grid-area: texto-uno;
+    text-align: center;
+    margin: 0 10rem;
+}
+
+.nosotros-dos {
+    display: grid;
+    grid-template-areas: 
+    "titulo1-dos imagen-dos"
+    "texto1-dos imagen-dos"
+    "titulo2-dos imagen-dos"
+    "texto2-dos imagen-dos";
+    margin: 2rem 30rem;
+}
+
+.nosotros-dos-titulo1 {
+    grid-area: titulo1-dos;
+    height: 1em;
+}
+
+.nosotros-dos-texto1 {
+    grid-area: texto1-dos;
+    text-align: center;
+    margin: 0 10rem;
+}
+
+.nosotros-dos-titulo2 {
+    grid-area: titulo2-dos;
+    height: 1em;
+}
+
+.nosotros-dos-texto2 {
+    grid-area: texto2-dos;
+    text-align: center;
+    margin: 0 10rem;
+}
+
+.nosotros-dos-imagen {
+    grid-area: imagen-dos;
+}

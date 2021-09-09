@@ -1,0 +1,45 @@
+footer {
+    background-color: #003172;
+    color: #ffffff;
+    padding: 3em;
+    p {
+        color: white;
+    }
+    .icon {
+        font-size: 1.6rem;
+        margin-right: 0.4rem;
+        color:$yellow;
+    }
+    .indent {
+        margin-left: 2rem;
+    }
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-areas: 
+    ". . . contact address schedule";
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-address {
+    grid-area: address;
+}
+
+.footer-schedule {
+    grid-area: schedule;
+}
+
+.watermark p {
+    color: $yellow;
+    padding: 0.8em;
+    margin: 0 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
