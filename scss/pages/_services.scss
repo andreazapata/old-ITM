@@ -1,12 +1,39 @@
+$ancho: 640px;
+
+@mixin items ($fondo){
+    background-color: $fondo;
+}
+
+.item1 {
+    @include items (red);
+}
+
+.item2 {
+    @include items (blue);
+}
+
+.item3 {
+    @include items (yellow);
+}
+
+.item4 {
+    @include items (black);
+}
+
+.item5 {
+    @include items (brown);
+}
+
 img {
-    width: 320px;
-    height: 320px;
+    width: $ancho/2;
+    height: $ancho/2;
     margin-bottom: 0.8rem;    
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-items: center;
     justify-content: center;
 }

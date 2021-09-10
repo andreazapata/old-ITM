@@ -15,6 +15,7 @@
 .logo {
     height: 50px;
     padding: 0.8em 0;
+    margin-top: 0.8rem;
     width: auto;
     float: left;
 }
@@ -26,20 +27,20 @@
     font-size: 1.6em;
     padding: 0.5em 0;
     margin: 1.6rem 0;
-    li {
-        display: inline-block;
-        margin-left: 3.2rem;
-        color: $black;
+        li {
+            display: inline-block;
+            margin-left: 3.2rem;
+            color: $black;
+                a:link, :visited {
+                    color: #212429;
+                    text-decoration: none;
+                    padding-bottom: 0.8em;
+                }
+                a:active {
+                    color: dimgray;
+                }
+                a:hover {
+                border-bottom: 2px solid $yellow;
+                }
+        }
     }
-    li a:link, :visited {
-        color: #212429;
-        text-decoration: none;
-        padding-bottom: 0.8em;
-    }
-    li a:active {
-        color: dimgray;
-    }
-    li a:hover {
-        border-bottom: 2px solid $yellow;
-    }
-}

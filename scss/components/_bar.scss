@@ -19,6 +19,15 @@
                 font-size: 1.6rem;
                 margin: 0 0.2rem 0 1.6rem;
             }
+            a:link, :visited {
+                color: white;
+            }
+            a:active {
+                color: $yellow;
+            }
+            a:hover {
+                color: $yellow;
+            }
         }
     }
 }

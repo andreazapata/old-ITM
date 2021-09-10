@@ -90,6 +90,12 @@ p {
   .contactInfo ul li i {
     font-size: 1.6rem;
     margin: 0 0.2rem 0 1.6rem; }
+  .contactInfo ul li a:link, .contactInfo ul li :visited {
+    color: white; }
+  .contactInfo ul li a:active {
+    color: #FFD046; }
+  .contactInfo ul li a:hover {
+    color: #FFD046; }
 
 .btn:link, .btn:visited {
   font-family: 'Montserrat',sans-serif;
@@ -156,6 +162,7 @@ footer {
 .logo {
   height: 50px;
   padding: 0.8em 0;
+  margin-top: 0.8rem;
   width: auto;
   float: left; }
 
@@ -170,14 +177,14 @@ footer {
     display: inline-block;
     margin-left: 3.2rem;
     color: #212429; }
-  .mainNav li a:link, .mainNav :visited {
-    color: #212429;
-    text-decoration: none;
-    padding-bottom: 0.8em; }
-  .mainNav li a:active {
-    color: dimgray; }
-  .mainNav li a:hover {
-    border-bottom: 2px solid #FFD046; }
+    .mainNav li a:link, .mainNav li :visited {
+      color: #212429;
+      text-decoration: none;
+      padding-bottom: 0.8em; }
+    .mainNav li a:active {
+      color: dimgray; }
+    .mainNav li a:hover {
+      border-bottom: 2px solid #FFD046; }
 
 .heroImage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/tarimas.jpg);
@@ -259,6 +266,7 @@ img {
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-items: center;
   justify-content: center; }
 
@@ -266,6 +274,21 @@ img {
   margin: 2rem; }
   .item p {
     text-align: center; }
+
+.item1 {
+  background-color: red; }
+
+.item2 {
+  background-color: blue; }
+
+.item3 {
+  background-color: yellow; }
+
+.item4 {
+  background-color: black; }
+
+.item5 {
+  background-color: brown; }
 
 img {
   width: 320px;
@@ -275,6 +298,7 @@ img {
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-items: center;
   justify-content: center; }
 
@@ -284,51 +308,22 @@ img {
     text-align: center; }
 
 .img-nosotros {
-  width: 600px;
+  width: 90%;
   height: auto; }
 
 .nosotros-uno {
   display: grid;
-  grid-template-areas: "imagen-uno titulo-uno" "imagen-uno texto-uno" "imagen-uno texto-uno";
-  margin: 2rem 30rem 10rem 30rem; }
+  grid-template-areas: "imagen-uno titulo-uno" "imagen-uno texto-uno" "imagen-uno texto-uno"; }
 
 .nosotros-uno-imagen {
   grid-area: imagen-uno; }
 
 .nosotros-uno-titulo {
-  grid-area: titulo-uno;
-  height: 1em; }
+  grid-area: titulo-uno; }
 
 .nosotros-uno-texto {
   grid-area: texto-uno;
-  text-align: center;
-  margin: 0 10rem; }
-
-.nosotros-dos {
-  display: grid;
-  grid-template-areas: "titulo1-dos imagen-dos" "texto1-dos imagen-dos" "titulo2-dos imagen-dos" "texto2-dos imagen-dos";
-  margin: 2rem 30rem; }
-
-.nosotros-dos-titulo1 {
-  grid-area: titulo1-dos;
-  height: 1em; }
-
-.nosotros-dos-texto1 {
-  grid-area: texto1-dos;
-  text-align: center;
-  margin: 0 10rem; }
-
-.nosotros-dos-titulo2 {
-  grid-area: titulo2-dos;
-  height: 1em; }
-
-.nosotros-dos-texto2 {
-  grid-area: texto2-dos;
-  text-align: center;
-  margin: 0 10rem; }
-
-.nosotros-dos-imagen {
-  grid-area: imagen-dos; }
+  text-align: center; }
 
 h3 {
   text-align: center;
