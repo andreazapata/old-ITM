@@ -1,29 +1,5 @@
 $ancho: 640px;
 
-@mixin items ($fondo){
-    background-color: $fondo;
-}
-
-.item1 {
-    @include items (red);
-}
-
-.item2 {
-    @include items (blue);
-}
-
-.item3 {
-    @include items (yellow);
-}
-
-.item4 {
-    @include items (black);
-}
-
-.item5 {
-    @include items (brown);
-}
-
 img {
     width: $ancho/2;
     height: $ancho/2;

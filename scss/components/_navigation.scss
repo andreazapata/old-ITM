@@ -1,46 +1,140 @@
-.navBar {
-    height: 6.4rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e6e6e6;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
+// .navBar {
+//     height: 6.4rem;
+//     background-color: #ffffff;
+//     border-bottom: 1px solid #e6e6e6;
+//     position: sticky;
+//     top: 0;
+//     z-index: 1;
+// }
 
-.navBar-elements {
-    padding: 0 3.2em;
-    margin: 0 10rem;
-}
+// .navBar-elements {
+//     padding: 0 3.2em;
+//     margin: 0 10rem;
+// }
+
+// .logo {
+//     height: 50px;
+//     padding: 0.8em 0;
+//     margin-top: 0.8rem;
+//     width: auto;
+//     float: left;
+// }
+
+// .mainNav {
+//     float: right;
+//     list-style: none;
+//     font-family: 'Montserrat', serif;
+//     font-size: 1.6em;
+//     padding: 0.5em 0;
+//     margin: 1.6rem 0;
+//         li {
+//             display: inline-block;
+//             margin-left: 3.2rem;
+//             color: $black;
+//                 a:link, :visited {
+//                     color: #212429;
+//                     text-decoration: none;
+//                     padding-bottom: 0.8em;
+//                 }
+//                 a:active {
+//                     color: dimgray;
+//                 }
+//                 a:hover {
+//                 border-bottom: 2px solid $yellow;
+//                 }
+//         }
+//     }
 
 .logo {
-    height: 50px;
-    padding: 0.8em 0;
-    margin-top: 0.8rem;
+    height: 40px;
     width: auto;
-    float: left;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
-.mainNav {
-    float: right;
-    list-style: none;
-    font-family: 'Montserrat', serif;
-    font-size: 1.6em;
-    padding: 0.5em 0;
-    margin: 1.6rem 0;
+header {
+    background-color: white;
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    z-index: 999;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    ul {
         li {
-            display: inline-block;
-            margin-left: 3.2rem;
-            color: $black;
-                a:link, :visited {
-                    color: #212429;
-                    text-decoration: none;
-                    padding-bottom: 0.8em;
-                }
-                a:active {
-                    color: dimgray;
-                }
-                a:hover {
-                border-bottom: 2px solid $yellow;
-                }
+            margin-bottom: 2em;
+            margin-left: 1em;
+            a {
+                padding-bottom: 0.5em;
+                opacity: 0;
+                transition: opacity 150ms ease-in-out;
+            }
+            a:link, :visited {
+                color: #212429;
+                text-decoration: none;
+                font-size: 1.6rem;
+            }
+            a:active {
+                color: dimgray;
+            }
+            a:hover {
+            border-bottom: 2px solid $yellow;
+            }
         }
     }
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+        a {
+            opacity: 1;
+            transition: opacity 250ms ease-in-out 250ms;
+        }
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+        
+}
+
+.nav-toggle-label span, 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: $black;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 5px;
+}
+
+.nav-toggle-label span::after {
+    top: 5px;
+}

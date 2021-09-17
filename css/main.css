@@ -147,44 +147,81 @@ footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem; }
 
-.navBar {
-  height: 6.4rem;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e6e6e6;
-  position: sticky;
-  top: 0;
-  z-index: 1; }
-
-.navBar-elements {
-  padding: 0 3.2em;
-  margin: 0 10rem; }
-
 .logo {
-  height: 50px;
-  padding: 0.8em 0;
-  margin-top: 0.8rem;
+  height: 40px;
   width: auto;
-  float: left; }
+  margin-top: 1rem;
+  display: inline-block; }
 
-.mainNav {
-  float: right;
-  list-style: none;
-  font-family: 'Montserrat', serif;
-  font-size: 1.6em;
-  padding: 0.5em 0;
-  margin: 1.6rem 0; }
-  .mainNav li {
-    display: inline-block;
-    margin-left: 3.2rem;
-    color: #212429; }
-    .mainNav li a:link, .mainNav li :visited {
+header {
+  background-color: white;
+  text-align: center;
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  z-index: 999; }
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0%;
+  background-color: white;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out; }
+  nav ul li {
+    margin-bottom: 2em;
+    margin-left: 1em; }
+    nav ul li a {
+      padding-bottom: 0.5em;
+      opacity: 0;
+      transition: opacity 150ms ease-in-out; }
+    nav ul li a:link, nav ul li :visited {
       color: #212429;
       text-decoration: none;
-      padding-bottom: 0.8em; }
-    .mainNav li a:active {
+      font-size: 1.6rem; }
+    nav ul li a:active {
       color: dimgray; }
-    .mainNav li a:hover {
+    nav ul li a:hover {
       border-bottom: 2px solid #FFD046; }
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1); }
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms; }
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #212429;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative; }
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute; }
+
+.nav-toggle-label span::before {
+  bottom: 5px; }
+
+.nav-toggle-label span::after {
+  top: 5px; }
 
 .heroImage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/tarimas.jpg);
@@ -195,7 +232,7 @@ footer {
 
 .heroText {
   position: absolute;
-  width: 1140px;
+  width: 80%;
   top: 40%;
   left: 15%; }
   .heroText h1 {
@@ -274,21 +311,6 @@ img {
   margin: 2rem; }
   .item p {
     text-align: center; }
-
-.item1 {
-  background-color: red; }
-
-.item2 {
-  background-color: blue; }
-
-.item3 {
-  background-color: yellow; }
-
-.item4 {
-  background-color: black; }
-
-.item5 {
-  background-color: brown; }
 
 img {
   width: 320px;
@@ -434,3 +456,26 @@ input:focus::placeholder {
 
 .contact-location {
   grid-area: location; }
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none; }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; }
+  .logo {
+    grid-column: 2 / 3; }
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    nav ul {
+      display: flex;
+      justify-content: flex-end; }
+      nav ul li {
+        margin-left: 3em;
+        margin-bottom: 0; }
+        nav ul li a {
+          opacity: 1; } }
